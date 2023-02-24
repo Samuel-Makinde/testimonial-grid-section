@@ -1,0 +1,150 @@
+*{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+article{
+    max-width: 300px;
+    height: auto;
+}
+
+.firstCard{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    color: hsl(0, 0%, 100%);
+    padding: 1.7rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.secondCard{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+    padding: 1.7rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.thirdCard{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+    padding: 1.7rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.fourthCard{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    padding: 1.7rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.fifthCard{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+    padding: 1.7rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+br + *{
+    opacity: .5;
+}
+
+article p{
+    opacity: .7;
+}
+h4{
+    font-size: .7rem;
+}
+h2{
+    font-size: 1rem;
+    padding-top: .7rem;
+    clear: left;
+}
+
+p{
+    font-size: .8rem;
+    padding-top: 1rem;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.profile-container {
+    display: inline-block; /* display container as inline-block */
+}
+
+img {
+    float: left;
+    margin-right: 10px;
+    /* add some space between the image and name */
+}
+
+.name-container {
+    display: inline-block;
+    padding-top: .8rem;
+    /* display name container as inline-block */
+}
+
+@media screen  and (min-width: 1200px){
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        overflow-x: hidden;
+    }
+
+    .firstCard{
+        max-width: 600px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .secondCard{
+        height: 250px;
+    }
+
+    .thirdCard{
+        height: 250px;
+    }
+
+    .fourthCard{
+        max-width: 600px;
+        height: 250px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .fifthCard{
+        height: 530px;
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .fifthCard p{
+        font-size: .95rem;
+    }
+
+}
